@@ -1,0 +1,22 @@
+Apple 39 40 4
+Banana 27 60 4
+Beer 52 10 12
+Book 30 10 2
+Camera 32 30 1
+Cheese 23 30 4
+Chocolate Bar 15 60 10
+Compass 13 35 1
+Jeans 48 10 1
+Map 9 150 1
+Notebook 22 80 1
+Sandwich 50 160 4
+Ski Jacket 43 75 1
+Ski Pants 42 70 1
+Socks 4 50 2
+Sunglasses 7 20 1
+Suntan Lotion 11 70 1
+T-Shirt 24 15 1
+Tin 68 45 1
+Towel 18 12 1
+Umbrella 73 40 1
+Water 153 200 1

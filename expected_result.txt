@@ -1,0 +1,19 @@
+Total weight of solution: 999
+Total value of solution: 2535
+Set of items chosen and their quantity:
+--
+Water : 1
+Ski Pants : 1
+Ski Jacket : 1
+Notebook : 1
+T-Shirt : 1
+Socks : 2
+Cheese : 4
+Compass : 1
+Sunglasses : 1
+Banana : 4
+Sandwich : 4
+Chocolate Bar : 10
+Apple : 3
+Suntan Lotion : 1
+Map : 1
