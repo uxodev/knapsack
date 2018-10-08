@@ -50,7 +50,7 @@ public class Recursive {
     private int totalWeight;
 
     // Set up bounded knapsack input to work with 0-1 knapsack algorithm.
-    public int boundedSolve(int maxWeight, ArrayList<Item> itemInput) {
+    public int solveBounded(int maxWeight, ArrayList<Item> itemInput) {
         this.maxWeight = maxWeight;
         itemCount = 0;
         numberOfRecursiveCalls = 0;
@@ -79,13 +79,13 @@ public class Recursive {
         }
 
         // create solution
-        int bestValueForWeight = solve(itemCount - 1, this.maxWeight);
+        int bestValueForWeight = solve01(itemCount - 1, this.maxWeight);
         findItemsInSolution();
         return bestValueForWeight;
     }
 
     // Return the maximum value that can be put in a knapsack of capacity i + 1.
-    private int solve(int i, int w) {
+    private int solve01(int i, int w) {
         numberOfRecursiveCalls++;
 
         if (i < 0 || w == 0) {
@@ -100,15 +100,15 @@ public class Recursive {
 
         // if weight of current item is more than will fit, don't take item
         if (weight[i] > w) {
-            return K[i][w] = solve(i - 1, w);
+            return K[i][w] = solve01(i - 1, w);
         }
 
         // find the value if item i is taken and the value if it is not taken,
         // if it is taken then set the new best solution value in the value table K
         // and mark it as taken in the keep table keep
         else {
-            int take = solve(i - 1, w - weight[i]) + value[i];
-            int dontTake = solve(i - 1, w);
+            int take = solve01(i - 1, w - weight[i]) + value[i];
+            int dontTake = solve01(i - 1, w);
             if (take > dontTake) {
                 keep[i][w] = 1;
                 K[i][w] = take;

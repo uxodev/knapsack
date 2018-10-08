@@ -25,7 +25,7 @@ public class Dynamic {
     private ItemCollection[] bestValueForWeight;
     private int maxWeight;
 
-    ItemCollection solve(int maxWeight, ArrayList<Item> itemInput) {
+    public ItemCollection solveBounded(int maxWeight, ArrayList<Item> itemInput) {
         this.maxWeight = maxWeight;
         bestValueForWeight = new ItemCollection[this.maxWeight + 1];
         for (int i = 0; i < this.maxWeight + 1; i++) {

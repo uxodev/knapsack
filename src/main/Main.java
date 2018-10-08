@@ -31,11 +31,11 @@ public class Main {
         fileIO.write("Maximum weight for knapsack: " + maxWeight + "\n");
 
         Recursive recursive = new Recursive();
-        recursive.boundedSolve(maxWeight, input);
+        recursive.solveBounded(maxWeight, input);
         fileIO.write(recursive.printResult());
 
         Dynamic dynamic = new Dynamic();
-        dynamic.solve(maxWeight, input);
+        dynamic.solveBounded(maxWeight, input);
         fileIO.write(dynamic.printResult());
 
         fileIO.close();
